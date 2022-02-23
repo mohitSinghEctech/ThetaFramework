@@ -8,7 +8,7 @@
 import Foundation
 
 public class ThetaClass {
-    init() {}
+    public init() {}
     
     public func getLogs() {
         print("Implemented theta framework")
