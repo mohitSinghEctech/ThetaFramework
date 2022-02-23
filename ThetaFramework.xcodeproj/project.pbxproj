@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		E4819B8E27C6183E0097EF49 /* ThetaFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E4819B8D27C6183E0097EF49 /* ThetaFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4819B9527C6184E0097EF49 /* ThetaClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4819B9427C6184E0097EF49 /* ThetaClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4819B8A27C6183E0097EF49 /* ThetaFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThetaFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4819B8D27C6183E0097EF49 /* ThetaFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThetaFramework.h; sourceTree = "<group>"; };
+		E4819B9427C6184E0097EF49 /* ThetaClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThetaClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				E4819B8D27C6183E0097EF49 /* ThetaFramework.h */,
+				E4819B9427C6184E0097EF49 /* ThetaClass.swift */,
 			);
 			path = ThetaFramework;
 			sourceTree = "<group>";
@@ -93,6 +96,7 @@
 				TargetAttributes = {
 					E4819B8927C6183E0097EF49 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -129,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4819B9527C6184E0097EF49 /* ThetaClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		E4819B9227C6183E0097EF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -280,6 +286,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -288,6 +295,7 @@
 		E4819B9327C6183E0097EF49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
